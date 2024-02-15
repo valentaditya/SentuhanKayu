@@ -1,0 +1,818 @@
+.content{
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: transparent;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    transition: background-color 0.6s ease-in-out;
+    z-index: 100;
+    
+}
+
+
+
+header img{
+  width: 135px;
+  height: 121px;
+  position: absolute;
+  /* margin-left: 110px; */
+  /* margin-top: -5px; */
+  top: -1cm;
+  right: 31cm;
+  margin-top: 0.3cm;
+}
+
+header.scrolled{
+    background-color: #C39E5C;
+    opacity: 0.98;
+    
+}
+
+
+header nav{
+    padding: 1.5em 0 1.5em 5em;
+    /* margin-left: 201px; */
+    /* margin-top: 3px; */
+    display: flex;
+    justify-content: center;
+    right: 1cm;
+    position: absolute;
+}       
+
+header nav strong a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin: 1em;
+    position: relative;
+    transition: color 0.4s ease-in-out;
+    padding: 0.15em 0 0.15em 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+
+header a::before{
+    position: absolute;
+    content: "";
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    bottom: 0;
+    left: -8em;
+    transition: left 0.3s ease-out;
+
+}
+
+header nav a:hover::before,
+header nav a:focus::before,
+header nav a:active::before{
+    left: 0;
+}
+
+
+header.scrolled nav a:hover::before {
+  border-color: #3B1A00; /* Ganti warna sesuai keinginan Anda */
+}
+
+/* header.scrolled nav a::before{
+    border:2px solid black;
+} */
+
+
+/* header.scrolled nav a{
+    color: black;
+} */
+@media screen and (max-width: 768px) {
+    header nav {
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-left: 12px;
+    }
+    
+    header img {
+        margin-left: 10px;
+        width: 50px;
+        height: 20px;
+        
+    }
+    
+    header nav a {
+        margin: 0.5em;
+        font-size: 8px;
+    }
+  }
+  .card{
+    background-color: #FFFFFF;
+    /* padding: 9px; */
+    height: 931px ;
+    /* width: 1352px; */
+    /* margin-top: 950px; */
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    top: 0px;
+    border: none;
+   }
+
+.card .watermark{
+  color: #909090;
+    top: 54px;
+    position: absolute;
+}
+.card .p1{
+    font-size: 1.4em;
+    color: #666666;
+    /* padding-left: 107px; */
+    /* padding-right: 92px; */
+    margin-top: 31px;
+}
+
+.card .p2{
+    font-size: 1.4em;
+    color: #666666;
+    /* padding-left: 363px; */
+    /* padding-right: 360px;*/
+}
+
+.card h3{
+    margin-top: -45px;
+    margin-left: 53px;
+    color: black;
+}
+
+.card strong h1{
+  top: 95px;
+  /* margin-bottom: 10px; */
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  left: 410px;
+}
+
+.card .kotakcoklat{
+    width: 97px;
+    height: 5px;
+    background-color: #A6795B;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 119px;
+
+
+}
+
+.card .pengertian{
+  width: 1084px;
+  top: 629px;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  color: #1C1E21;
+  opacity: 72%;
+  line-height: 24px;
+}
+
+.card img {
+  height: 784px;
+  top: -4px;
+  width: 817px;
+  position: absolute;
+  left: 289px;
+}
+
+.Home .img-phone-holder{
+    width: 361px;
+    height: 450px;
+    top: 194px;
+    left: 278px;
+    position: absolute;
+
+}
+
+.Home .img-logo{
+  width: 159px;
+  height: 136px;
+  top: 176px;
+  position: absolute;
+  right: 1076px;
+}
+
+.Home strong .judul-logo{
+  top: 225px;
+  position: absolute;
+  right: 885px;
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.Home strong .title{
+  top: 323px;
+  position: absolute;
+  right: 798px;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 50px;
+}
+
+.Home .isi{
+  top: 433px;
+  position: absolute;
+  right: 756px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 25px;
+
+}   
+
+.Home .Button-Pesan-Custum {
+  top: 529px;
+  right: 1028px;
+  width: 164px;
+  height: 46px;
+  background-color: #BB442F;
+  color: white;
+  border-color: #BB442F;
+  font-size: 16px;
+  position: absolute;
+  border-radius: 4cm;
+  text-align: center;
+}
+/* .card .card-hover1 {
+    position: relative;
+    width: 274px;
+    height: 356px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    top: 242px;
+    right: 381px;
+  }
+  
+  .card .card-hover1::before,
+  .card .card-hover1::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #c4a05f;
+    transition: all 0.5s;
+    color: white;
+  }
+  
+  .card .card-hover1::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card .card-hover1::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card .card-hover1:hover::before,
+  .card .card-hover1:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card .card-hover1:hover:after {
+    content: "Customer Service yang responsif dan komunikatif. Saya sangat puas dengan pelayanan mereka.";
+    font-size: 15px;
+ 
+  }
+
+  .card .card-hover2 {
+    position: relative;
+    width: 274px;
+    height: 356px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    top: -69px;
+    margin-left: -34px;
+  }
+  
+  .card .card-hover2::before,
+  .card .card-hover2::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #c4a05f;
+    transition: all 0.5s;
+    color: white;
+  }
+  
+  .card .card-hover2::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card .card-hover2::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card .card-hover2:hover::before,
+  .card .card-hover2:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card .card-hover2:hover:after {
+    content: "text dalam";
+  }
+
+  .card .card-hover3 {
+    position: relative;
+    width: 274px;
+    height: 356px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    top: -378px;
+    margin-left: 690px;
+  }
+  
+  .card .card-hover3::before,
+  .card .card-hover3::after {
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #A6795B;
+    transition: all 0.5s;
+    color: white;
+ 
+  }
+  
+  .card .card-hover3::before {
+    top: 0;
+    right: 0;
+    border-radius: 0 15px 0 100%;
+  }
+  
+  .card .card-hover3::after {
+    bottom: 0;
+    left: 0;
+    border-radius: 0 100%  0 15px;
+  }
+  
+  .card .card-hover3:hover::before,
+  .card .card-hover3:hover:after {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all 0.5s;
+  }
+  
+  .card .card-hover3:hover:after {
+    content: "text dalam";
+  }
+
+  .card .card-hover1 .gambar-card-hover{
+    height: 100px;
+    width: 100px;
+    border-radius: 20px;
+    /* border-color: black; */
+    /* border: 5px solid gray;
+    top: 38px;
+    position: absolute;
+  } */
+  /* .card .card-hover1 strong .title-card-hover{
+    
+    top: 154px;
+    position: absolute;
+    font-size: 25px;
+    left: 76px;
+    color: black;
+  }
+  .card .card-hover1 .isi-card-hover{
+    
+    top: 190px;
+    position: absolute;
+    font-size: 13px;
+    color: gray;
+    font-style: italic;
+  } */ 
+
+  .card .card-hover-more-info1 {
+    width: 236px;
+    height: 510px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    top: 242px;
+    right: 411px;
+}
+
+
+.card .card-hover-more-info1 .card-details {
+ color: black;
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+.card .card-hover-more-info1 .card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: #008bf8;
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ transition: 0.3s ease-out;
+}
+
+.card .card-hover-more-info1 .card-details .text-body {
+ color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.card .card-hover-more-info1 .card-details .text-title {
+ font-size: 1.5em;
+ font-weight: bold;
+}
+
+/*Hover*/
+.card .card-hover-more-info1:hover {
+ border-color: #008bf8;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card .card-hover-more-info1:hover .card-button {
+ transform: translate(-50%, 50%);
+ opacity: 1;
+}
+
+.card .card-hover-more-info2 {
+  width: 236px;
+  height: 510px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  top: 10px;
+  right: 147px;
+}
+
+
+.card .card-hover-more-info2 .card-details {
+color: black;
+height: 100%;
+gap: .5em;
+display: grid;
+place-content: center;
+}
+
+.card .card-hover-more-info2 .card-button {
+transform: translate(-50%, 125%);
+width: 60%;
+border-radius: 1rem;
+border: none;
+background-color: #008bf8;
+color: #fff;
+font-size: 1rem;
+padding: .5rem 1rem;
+position: absolute;
+left: 50%;
+bottom: 0;
+opacity: 0;
+transition: 0.3s ease-out;
+}
+
+.card .card-hover-more-info2 .card-details .text-body {
+color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.card .card-hover-more-info2 .card-details .text-title {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+/*Hover*/
+.card .card-hover-more-info2:hover {
+border-color: #008bf8;
+box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card .card-hover-more-info2:hover .card-button {
+transform: translate(-50%, 50%);
+opacity: 1;
+}
+
+.card .card-hover-more-info3 {
+  width: 236px;
+  height: 510px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  top: -223px;
+  right: -116px;
+}
+
+
+.card .card-hover-more-info3 .card-details {
+color: black;
+height: 100%;
+gap: .5em;
+display: grid;
+place-content: center;
+}
+
+.card .card-hover-more-info3 .card-button {
+transform: translate(-50%, 125%);
+width: 60%;
+border-radius: 1rem;
+border: none;
+background-color: #008bf8;
+color: #fff;
+font-size: 1rem;
+padding: .5rem 1rem;
+position: absolute;
+left: 50%;
+bottom: 0;
+opacity: 0;
+transition: 0.3s ease-out;
+}
+
+.card .card-hover-more-info3 .card-details .text-body {
+color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.card .card-hover-more-info3 .card-details .text-title {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+/*Hover*/
+.card .card-hover-more-info3:hover {
+border-color: #008bf8;
+box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card .card-hover-more-info3:hover .card-button {
+transform: translate(-50%, 50%);
+opacity: 1;
+}
+
+.card .card-hover-more-info4 {
+  width: 236px;
+    height: 510px;
+    border-radius: 20px;
+    background: #f5f5f5;
+    position: relative;
+    padding: 1.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+    top: -457px;
+    right: -381px;
+}
+
+
+.card .card-hover-more-info4 .card-details {
+color: black;
+height: 100%;
+gap: .5em;
+display: grid;
+place-content: center;
+}
+
+.card .card-hover-more-info4 .card-button {
+transform: translate(-50%, 125%);
+width: 60%;
+border-radius: 1rem;
+border: none;
+background-color: #008bf8;
+color: #fff;
+font-size: 1rem;
+padding: .5rem 1rem;
+position: absolute;
+left: 50%;
+bottom: 0;
+opacity: 0;
+transition: 0.3s ease-out;
+}
+
+.card .card-hover-more-info4 .card-details .text-body {
+color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.card .card-hover-more-info4 .card-details .text-title {
+font-size: 1.5em;
+font-weight: bold;
+}
+
+/*Hover*/
+.card .card-hover-more-info4:hover {
+border-color: #008bf8;
+box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card .card-hover-more-info4:hover .card-button {
+transform: translate(-50%, 50%);
+opacity: 1;
+}
+
+
+.card-tentang-kami{
+  height: 984px;
+  background-color: #eeeeee;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  top: 100px;
+  border: none;
+}
+
+
+.card-tentang-kami .watermark{
+  color: #909090;
+  top: 1627px;
+    position: absolute;
+}
+
+.card-tentang-kami strong h1{
+  top: 1666px;
+  /* margin-bottom: 10px; */
+  position: absolute;
+  color: black;
+  font-size: 30px;
+  left: 457px;
+}
+
+.card-tentang-kami .Layanan-custom{
+  height: 303px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  /* top: 16px; */
+  border: none;
+  width: 282px;
+  margin-top: -199px;
+  margin-left: 17px;
+}
+.card-tentang-kami .Layanan-garansi{
+  height: 303px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  /* top: 16px; */
+  border: none;
+  width: 282px;
+  margin-top: -199px;
+  margin-left: 37px;
+}
+.card-tentang-kami .Layanan-online{
+  height: 303px;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 100vh; */
+    /* top: 16px; */
+    border: none;
+    width: 282px;
+    margin-top: 443px;
+    margin-left: -600px;
+}
+.card-tentang-kami .Layanan-prototype{
+  height: 303px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 282px;
+  margin-top: 441px;
+  margin-left: 37px;
+}
+
+.card-tentang-kami .Layanan-custom p{
+      /* padding: 10px; */
+      margin-top: 149px;
+      /* margin-left: -199px; */
+      position: absolute;
+      padding-left: 400px;
+      padding-right: 400px;
+      line-height: 30px;
+      color: black;
+}
+
+.card-tentang-kami .Layanan-custom strong h1{
+  font-size: 16px;
+    /* margin-top: -31px; */
+    /* margin-left: -96px; */
+    position: absolute;
+    margin-top: 260px;
+}
+
+.card-tentang-kami .Layanan-custom img{
+  margin-top: -200px;
+  /* margin-left: 149px; */
+  position: absolute;
+}
+
+.card-tentang-kami .Layanan-garansi p{
+  padding: 10px; 
+    margin-top: 155px;
+    position: absolute;
+    padding-left: 400px;
+    padding-right: 400px;
+    line-height: 25px;
+    color: black;
+}
+
+.card-tentang-kami .Layanan-garansi strong h1{
+  font-size: 16px;
+  position: absolute;
+  margin-top: 260px;
+  left: 788px;
+}
+
+.card-tentang-kami .Layanan-garansi img{
+margin-top: -200px;
+/* margin-left: 149px; */
+position: absolute;
+}
