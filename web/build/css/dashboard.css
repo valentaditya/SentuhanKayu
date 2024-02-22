@@ -15,6 +15,10 @@ header{
     
 }
 
+body{
+  cursor: url("../assets/kursor2.png"), auto ;
+}
+
 
 
 header img{
@@ -90,6 +94,7 @@ header.scrolled nav a:hover::before {
     color: black;
 } */
 @media screen and (max-width: 768px) {
+  
     header nav {
         padding: 0;
         margin-left: 0;
@@ -687,7 +692,7 @@ opacity: 1;
 
 
 .card-tentang-kami{
-  height: 984px;
+  height: 1080px;
   background-color: #eeeeee;
   display: flex;
   padding: 0 35px;
@@ -725,8 +730,11 @@ opacity: 1;
   /* top: 16px; */
   border: none;
   width: 282px;
-  margin-top: -199px;
-  margin-left: 17px;
+  /* margin-top: -199px; */
+  /* margin-left: 17px; */
+  position: absolute;
+  top: 1789px;
+  left: 396px;
 }
 .card-tentang-kami .Layanan-garansi{
   height: 303px;
@@ -739,22 +747,28 @@ opacity: 1;
   /* top: 16px; */
   border: none;
   width: 282px;
-  margin-top: -199px;
-  margin-left: 37px;
+  /* margin-top: -199px; */
+  /* margin-left: 37px; */
+  top: 1789px;
+  position: absolute;
+  right: 362px;
 }
 .card-tentang-kami .Layanan-online{
   height: 303px;
-    background-color: #FFFFFF;
-    display: flex;
-    padding: 0 35px;
-    align-items: center;
-    justify-content: center;
-    /* min-height: 100vh; */
-    /* top: 16px; */
-    border: none;
-    width: 282px;
-    margin-top: 443px;
-    margin-left: -600px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  /* min-height: 100vh; */
+  /* top: 16px; */
+  border: none;
+  width: 282px;
+  /* margin-top: 443px; */
+  /* margin-left: -600px; */
+  top: 2114px;
+  position: absolute;
+  left: 396px;
 }
 .card-tentang-kami .Layanan-prototype{
   height: 303px;
@@ -765,54 +779,215 @@ opacity: 1;
   justify-content: center;
   border: none;
   width: 282px;
-  margin-top: 441px;
-  margin-left: 37px;
+  /* margin-top: 441px; */
+  /* margin-left: 37px; */
+  top: 2114px;
+  right: 359px;
+  position: absolute;
 }
 
 .card-tentang-kami .Layanan-custom p{
-      /* padding: 10px; */
-      margin-top: 149px;
-      /* margin-left: -199px; */
-      position: absolute;
-      padding-left: 400px;
-      padding-right: 400px;
-      line-height: 30px;
-      color: black;
+    /* padding: 10px; */
+    /* margin-top: 170px; */
+    /* margin-left: -199px; */
+    position: absolute;
+    /* padding-left: 400px; */
+    /* padding-right: 400px; */
+    line-height: 25px;
+    color: black;
+    left: 10px;
+    top: 167px;
 }
 
 .card-tentang-kami .Layanan-custom strong h1{
   font-size: 16px;
-    /* margin-top: -31px; */
-    /* margin-left: -96px; */
-    position: absolute;
-    margin-top: 260px;
+  /* margin-top: -31px; */
+  /* margin-left: -96px; */
+  position: absolute;
+  /* margin-top: 260px; */
+  top: 113px;
+  left: 71px;
 }
 
 .card-tentang-kami .Layanan-custom img{
-  margin-top: -200px;
+  margin-top: -189px;
   /* margin-left: 149px; */
   position: absolute;
+  left: 109px;
 }
 
 .card-tentang-kami .Layanan-garansi p{
-  padding: 10px; 
-    margin-top: 155px;
-    position: absolute;
-    padding-left: 400px;
-    padding-right: 400px;
-    line-height: 25px;
-    color: black;
+  padding: 10px;
+  /* margin-top: 155px; */
+  position: absolute;
+  /* padding-left: 400px; */
+  /* padding-right: 400px; */
+  line-height: 25px;
+  color: black;
+  top: 155px;;
 }
 
 .card-tentang-kami .Layanan-garansi strong h1{
   font-size: 16px;
   position: absolute;
   margin-top: 260px;
-  left: 788px;
+  left: 87px;
+  top: -141px;
 }
 
 .card-tentang-kami .Layanan-garansi img{
+  margin-top: -172px;
+  /* margin-left: 149px; */
+  position: absolute;
+}
+
+
+.card-tentang-kami .Layanan-online p{
+  padding: 10px;
+  margin-top: 126px;
+  position: absolute;
+  /* padding-left: 400px; */
+  /* padding-right: 400px; */
+  line-height: 25px;
+  color: black;
+}
+
+.card-tentang-kami .Layanan-online strong h1{
+  font-size: 16px;
+  position: absolute;
+  /* margin-top: 296px; */
+  left: 75px;
+  top: 111px;
+}
+
+.card-tentang-kami .Layanan-online img{
 margin-top: -200px;
 /* margin-left: 149px; */
 position: absolute;
+}
+
+
+.card-tentang-kami .Layanan-prototype p{
+  padding: 10px;
+  margin-top: 167px;
+  position: absolute;
+  /* padding-left: 400px; */
+  /* padding-right: 400px; */
+  line-height: 25px;
+  color: black;
+}
+
+.card-tentang-kami .Layanan-prototype strong h1{
+  font-size: 16px;
+  position: absolute;
+  /* margin-top: 578px; */
+  left: 75px;
+  top: 111px;
+}
+
+.card-tentang-kami .Layanan-prototype img{
+margin-top: -200px;
+/* margin-left: 149px; */
+position: absolute;
+}
+
+.card-tentang-kami .card-pesan-sekarang{
+  height: 159px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 346px;
+  /* margin-top: 973px; */
+  /* margin-left: 37px; */
+  position: absolute;
+  top: 2459px;
+  left: 512px;
+  color: black;
+}
+.card-tentang-kami .card-pesan-sekarang h1{
+  font-size: 20px;
+  position: absolute;
+  top: 6px;
+  left: 99px;
+}
+.card-tentang-kami .card-pesan-sekarang p{
+  font-size: 13px;
+  position: absolute;
+  top: 51px;
+  padding: 10px;
+  left: 10px;
+}
+
+
+.card-tentang-kami .card-pesan-sekarang .button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  /* box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #c5c5c5; */
+  top: 52px;
+  background-color: white;
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #BB442F;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:hover {
+  color: #ffffff;
+  border: 1px solid #BB442F;
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:hover:before {
+  top: -35%;
+  background-color: #BB442F;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.card-tentang-kami .card-pesan-sekarang .button2:hover:after {
+  top: -45%;
+  background-color: #BB442F;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }

@@ -106,6 +106,13 @@ class SiteController extends Controller
         
     }
 
+    public function actionModel3d()
+    {
+        $this->layout = 'main_3d';
+        return $this->render('model3d');
+        
+    }
+
     /**
      * Displays contact page.
      *
@@ -133,4 +140,5 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+    
 }

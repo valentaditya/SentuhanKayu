@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="build\js\dashboard.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- <title>Document</title> -->
 </head>
 
@@ -65,7 +66,7 @@
              data-aos="fade-left"
              data-aos-offset="100"
              data-aos-duration="500">
-             <img src="build/assets/icon_lampu_layanan.png">
+             <img src="build/assets/icon_dus_layanan.png">
                 <strong><h1>Garansi Produk</h1></strong>
                 <p>Anda hanya perlu menghubungi kami dan memberikan gambar/spesifikasi produk kerajinan kayu yang Anda inginkan. Lebih baik lagi jika Anda memiliki gambar kerjanya.</p>
              </div>
@@ -73,15 +74,22 @@
              data-aos="fade-right"
              data-aos-offset="100"
              data-aos-duration="500">
-                <strong><h1></h1></strong>
-                <p></p>
+             <img src="build/assets/icon_tanganduit_layanan.png" alt="">
+                <strong><h1>Bisa 100% online</h1></strong>
+                <p>Anda bisa menghemat banyak tenaga dan waktu karena proses pemesanan bisa 100% online dengan komunikasi WhatsApp.</p>
              </div>
              <div class="Layanan-prototype"
              data-aos="fade-left"
              data-aos-offset="100"
              data-aos-duration="500">
-                <strong><h1></h1></strong>
-                <p></p>
+             <img src="build/assets/icon_perbincang_layanan.png" alt="">
+                <strong><h1>Bisa kirim prototype</h1></strong>
+                <p>Kami akan mengirimkan sampel produk sesuai spesifikasi yang Anda tentukan. Ini untuk meyakinkan Anda bahwa kami bisa membuat produk kerajinan kayu seperti yang Anda inginkan.</p>
+             </div>
+             <div class="card-pesan-sekarang" data-aos="fade-up">
+                <h1>Pesan Sekarang</h1>
+                <p>Hubungi kami sekarang untuk mendapatkan berbagai benefit dan kemudahan ini. Klik tombol di bawah ini.</p>
+                <a href="https://wa.me/6287836118750?text=Min Saya Ingin Pesan Barang Dari SentuhanKayu"><button class="button2">Pesan Sekarang</button></a>
              </div>
             </div>
         </div>
