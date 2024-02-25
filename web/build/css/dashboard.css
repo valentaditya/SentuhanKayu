@@ -15,8 +15,15 @@ header{
     
 }
 
+
+@font-face {
+  font-family: Roboto_regular;
+  src: url(../assets/font/roboto/Roboto-Regular.ttf);
+}
+
 body{
   cursor: url("../assets/kursor2.png"), auto ;
+  font-family: Roboto_regular;
 }
 
 
@@ -82,7 +89,7 @@ header nav a:active::before{
 
 
 header.scrolled nav a:hover::before {
-  border-color: #3B1A00; /* Ganti warna sesuai keinginan Anda */
+  border-color: #3B1A00; 
 }
 
 /* header.scrolled nav a::before{
@@ -224,7 +231,7 @@ header.scrolled nav a:hover::before {
 .Home strong .title{
   top: 323px;
   position: absolute;
-  right: 798px;
+  right: 823px;
   color: #FFFFFF;
   font-size: 36px;
   line-height: 50px;
@@ -991,3 +998,378 @@ position: absolute;
   background-color: #BB442F;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
+
+
+.card-layanan{
+  height: 3233px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  top: 100px;
+  border: none;
+  padding-top: 176px;
+
+}
+
+
+.card-layanan .aneka-layanan strong .title_layanan{
+  color: black;
+  left: 171px;
+  position: absolute;
+  top: 2840px;
+  padding-right: 659px;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+
+.card-layanan .aneka-layanan .icon_ceklis{
+  width: 12px;
+  height: 14px;
+  position: absolute;
+}
+
+.card-layanan .aneka-layanan .text-ceklis{
+  color: #1C1E21;
+  opacity: 72%;
+  font-size: 16px;
+  position: absolute;
+}
+.card-layanan .kotakcoklat{
+  width: 47px;
+  height: 3px;
+  background-color: #A6795B;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 3418px;
+  left: 172px;
+}
+
+.card-layanan .aneka-layanan .gambar3d{
+  position: absolute;
+  right: 96px;
+  margin-top: 32px;
+}
+
+.card-layanan strong h1{
+  color: black;
+  font-size: 30px;
+  line-height: 40px;
+  top: 3593px;
+  left: 679px;
+  position: absolute;
+  padding-right: 191px;
+
+}
+
+.card-layanan .cara-pemesanan .tempat_makan_kayu{
+  position: absolute;
+  right: 248px;
+  top: 5333px;
+}
+
+.card-layanan .cara-pemesanan .watermark{
+  position: absolute;
+  top: 5102px;
+  left: 177px;
+  font-size: 14px;
+}
+
+.card-layanan .cara-pemesanan strong h1{
+  position: absolute;
+  top: 5124px;
+  left: 177px;
+  font-size: 30px;
+}
+
+.card-layanan .cara-pemesanan .title{
+  position: absolute;
+  top: 5250px;
+  left: 177px;
+  color: #1C1E21;
+  opacity: 72%;
+  line-height: 24px;
+  font-size: 16px;
+  padding-right: 600px;
+}
+
+.card-layanan .cara-pemesanan .gambar-no1{
+  position: absolute;
+  left: 173px;
+  top: 5340px;
+}
+.card-layanan .cara-pemesanan .title-no1{
+  position: absolute;
+  left: 257px;
+  top: 5356px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.card-layanan .cara-pemesanan .gambar-no2{
+  position: absolute;
+  left: 173px;
+  top: 5436px;
+}
+.card-layanan .cara-pemesanan .title-no2{
+  position: absolute;
+  left: 257px;
+  top: 5452px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.card-layanan .cara-pemesanan .gambar-no3{
+  position: absolute;
+  left: 173px;
+  top: 5532px;
+}
+.card-layanan .cara-pemesanan .title-no3{
+  position: absolute;
+  left: 257px;
+  top: 5548px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.card-layanan .cara-pemesanan .gambar-no4{
+  position: absolute;
+  left: 173px;
+  top: 5628px;
+}
+.card-layanan .cara-pemesanan .title-no4{
+  position: absolute;
+  left: 257px;
+  top: 5644px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+.card-layanan .cara-pemesanan .gambar-no5{
+  position: absolute;
+  left: 173px;
+  top: 5724px;
+}
+.card-layanan .cara-pemesanan .title-no5{
+  position: absolute;
+  left: 257px;
+  top: 5740px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.card-katalog{
+  height: 463px;
+  background-color: #A6795B;
+  display: flex;
+  padding: 0 35px;
+  /* min-height: 100vh; */
+  top: 100px;
+  border: none;
+  padding-top: 86px;
+  color: #FFFFFF;
+}
+
+.card-katalog img{
+  position: absolute;
+  left: 828px;
+}
+
+.card-katalog .box {
+  width: 396px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  left: 174px;
+  margin-top: 244px;
+}
+
+.card-katalog .box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+
+.card-katalog .box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.card-katalog .box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card-katalog .box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+
+.card-katalog .box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+
+.card-katalog button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.card-katalog .kotakputih{
+  width: 34px;
+  height: 3px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 218px;
+  top: 6044px;
+}
+
+
+.card-faq{
+  height: 1937px;
+  background-color: #FFFFFF;
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  top: 100px;
+  border: none;
+  padding-top: 176px;
+  padding-left: 218px;
+
+}
+.card-faq .watermark{
+  font-size: 14px;
+  color: #909090;
+}
+
+.card-faq h1{
+  color: #000000;
+  font-size: 30px;
+  line-height: 45px;
+  position: absolute;
+  left: 217px;
+  padding-right: 824px;
+  top: 6555px;
+}
+
+.card-faq .kotakcoklat{
+  width: 28px;
+  height: 3px;
+  background-color: #A6795B;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 6679px;
+}
+
+
+.card-faq .title-faq{
+  color: #7A7A7A;
+    font-size: 15px;
+    line-height: 25px;
+    position: absolute;
+    left: 617px;
+    padding-right: 434px;
+    top: 6568px;
+}
+
+.card-faq .judul-faq{
+  color: black;
+  font-size: 18px;
+  position: absolute;
+  left: 618px;
+}
+
+.card-hubungi-kami{
+  height: 909px;
+  background-color: #A6795B;
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  top: 100px;
+  border: none;
+  color: white;
+}
+
+.card-hubungi-kami h1{
+  font-size: 30px;
+  position: absolute;
+  left: 597px;
+  top: 8338px;
+}
+
+.card-hubungi-kami .garisputihatas{
+  width: 1031px;
+  height: 1px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 8554px;
+  left: 183px;
+
+}
+
+.card-hubungi-kami .judul-icon{
+  font-size: 16px;
+  position: absolute;
+  top: 8632px;
+  left: 351px;
+}
+
+.card-hubungi-kami .title-icon{
+  font-size: 16px;
+  position: absolute;
+  top: 8654px;
+  left: 351px;
+  padding-right: 623px;
+}
+
+.card-hubungi-kami .garisputihbawah{
+  width: 1031px;
+  height: 1px;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 9009px;
+  left: 183px;
+
+}
+
