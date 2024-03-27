@@ -1,0 +1,1259 @@
+.content{
+    background-color: #FFFFFF;
+}
+
+header{
+    background-color: transparent;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* width: 100%; */
+    transition: background-color 0.6s ease-in-out;
+    z-index: 100;
+    
+}
+
+
+@font-face {
+  font-family: Roboto_regular;
+  src: url(../assets/font/roboto/Roboto-Regular.ttf);
+}
+
+body{
+  cursor: url("../assets/kursor2.png"), auto ;
+  font-family: Roboto_regular;
+}
+
+
+
+header img{
+  width: 135px;
+  height: 121px;
+  position: absolute;
+  /* margin-left: 110px; */
+  /* margin-top: -5px; */
+  top: -1cm;
+  right: 31cm;
+  margin-top: 0.3cm;
+}
+
+header.scrolled{
+    background-color: #C39E5C;
+    opacity: 0.98;
+    
+}
+
+
+header nav{
+    padding: 1.5em 0 1.5em 5em;
+    /* margin-left: 201px; */
+    /* margin-top: 3px; */
+    display: flex;
+    justify-content: center;
+    right: 1cm;
+    position: absolute;
+}       
+
+header nav strong a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin: 1em;
+    position: relative;
+    transition: color 0.4s ease-in-out;
+    padding: 0.15em 0 0.15em 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+
+header a::before{
+    position: absolute;
+    content: "";
+    border: 2px solid #FFFFFF;
+    width: 100%;
+    bottom: 0;
+    left: -8em;
+    transition: left 0.3s ease-out;
+
+}
+
+header nav a:hover::before,
+header nav a:focus::before,
+header nav a:active::before{
+    left: 0;
+}
+
+
+header.scrolled nav a:hover::before {
+  border-color: #3B1A00; 
+}
+
+/* header.scrolled nav a::before{
+    border:2px solid black;
+} */
+
+
+/* header.scrolled nav a{
+    color: black;
+} */
+@media screen and (max-width: 768px) {
+  
+    header nav {
+        padding: 0;
+        margin-left: 0;
+        text-align: center;
+        margin-left: 12px;
+    }
+    
+    header img {
+        margin-left: 10px;
+        width: 50px;
+        height: 20px;
+        
+    }
+    
+    header nav a {
+        margin: 0.5em;
+        font-size: 8px;
+    }
+  }
+  .card{
+    background-color: #FFFFFF;
+    /* padding: 9px; */
+    height: 931px ;
+    /* width: 1352px; */
+    /* margin-top: 950px; */
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    top: 0px;
+    border: none;
+   }
+  .card-katalog{
+    background-color: #A6795B;
+    /* padding: 9px; */
+    height: 470px ;
+    /* width: 1352px; */
+    /* margin-top: 950px; */
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    border: none;
+    
+   }
+
+   .card-katalog h1{
+    font-size: 55px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 177px;
+   }
+
+   .card-katalog p{
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    top:261px;
+   }
+   .card-promo-spesial{
+    background-color: #FFFFFF;
+    /* padding: 9px; */
+    height: 646px ;
+    /* width: 1352px; */
+    /* margin-top: 950px; */
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    border: none;
+   }
+
+   .card-promo-spesial h1 {
+    font-size: 32px;
+    position: absolute;
+    color: black;
+    top: 511px;
+   }
+
+   .card-promo-spesial .gambar1{
+    position: absolute;
+    left: 172px;
+    top: 604px;
+    
+   }
+
+   .card-promo-spesial .gambar1 img{
+    width: 344px;
+    height: 344px;
+   }
+
+   .card-promo-spesial .gambar2{
+    position: absolute;
+    left: 534px;
+    top: 604px;
+   }
+
+   .card-promo-spesial .gambar2 img{ 
+    width: 344px;
+    height: 344px;
+   }
+
+   .card-promo-spesial .gambar3{
+    position: absolute;
+    left: 899px;
+    top: 604px;
+   }
+
+   .card-promo-spesial .gambar3 img{ 
+    width: 344px;
+    height: 344px;
+   }
+
+   .card-promo-spesial .title-1{
+    position: absolute;
+    top: 970px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 174px;
+    padding-right: 832px;
+   }
+
+   .card-promo-spesial .title-2{
+    position: absolute;
+    top: 970px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 538px;
+    padding-right: 468px;
+   }
+
+   .card-promo-spesial .title-3{
+    position: absolute;
+    top: 970px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 903px;
+    padding-right: 103px;
+   }
+
+   .card-promo-spesial .harga1 {
+   display: flex;
+   position: absolute;
+   top: 1016px;
+   color: #D9534F;
+   font-size: 13px;
+   left: 175px;
+   flex-direction: row;
+    }
+
+    .card-promo-spesial .harga1 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    } 
+
+    .card-promo-spesial .harga2 {
+        display: flex;
+        position: absolute;
+        top: 1016px;
+        color: #D9534F;
+        font-size: 13px;
+        left: 541px;
+        flex-direction: row;
+         }
+     
+    .card-promo-spesial .harga2 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    }
+
+    .card-promo-spesial .harga3 {
+        display: flex;
+        position: absolute;
+        top: 1016px;
+        color: #D9534F;
+        font-size: 13px;
+        left: 907px;
+        flex-direction: row;
+    }
+     
+    .card-promo-spesial .harga3 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    } 
+
+    .card-promo-spesial .harga-sebelum{
+        text-decoration: line-through;
+    }
+
+    .card-promo-spesial .harga-sesudah{
+        font-weight: bold;
+    }
+
+
+    .card-alat-dapur{
+        background-color: #F2F2F2;
+        /* padding: 9px; */
+        height: 616px ;
+        /* width: 1352px; */
+        /* margin-top: 950px; */
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        top: 617px;
+        border: none;
+       }
+       .card-alat-dapur h1 {
+        font-size: 32px;
+        position: absolute;
+        color: black;
+        top: 1130px;
+       }
+      
+       .card-alat-dapur .gambar1{
+        position: absolute;
+        left: 172px;
+        top: 1226px;
+        
+       }
+      
+       .card-alat-dapur .gambar1 img{
+        width: 344px;
+        height: 344px;
+       }
+      
+       .card-alat-dapur .gambar2{
+        position: absolute;
+        left: 534px;
+        top: 1226px;
+       }
+
+       .card-alat-dapur .gambar2 img{
+        width: 344px;
+        height: 344px;
+       }
+      
+       .card-alat-dapur .gambar3{
+        position: absolute;
+        left: 899px;
+        top: 1226px;
+       }
+       .card-alat-dapur .gambar3 img{
+        width: 344px;
+        height: 344px;
+       }
+      
+       .card-alat-dapur .title-1{
+        position: absolute;
+        top: 1584px;
+        font-size: 16px;
+        color: black;
+        /* line-height: 25; */
+        left: 174px;
+        padding-right: 832px;
+       }
+      
+       .card-alat-dapur .title-2{
+        position: absolute;
+        top: 1584px;
+        font-size: 16px;
+        color: black;
+        /* line-height: 25; */
+        left: 538px;
+        padding-right: 468px;
+       }
+      
+       .card-alat-dapur .title-3{
+        position: absolute;
+        top: 1584px;
+        font-size: 16px;
+        color: black;
+        /* line-height: 25; */
+        left: 903px;
+        padding-right: 103px;
+       }
+      
+       .card-alat-dapur .harga1 {
+       display: flex;
+       position: absolute;
+       top: 1630px;
+       color: #D9534F;
+       font-size: 13px;
+       left: 175px;
+       flex-direction: row;
+        }
+      
+        .card-alat-dapur .harga1 p {
+        margin-right: 10px; 
+        } 
+      
+        .card-alat-dapur .harga2 {
+            display: flex;
+            position: absolute;
+            top: 1630px;
+            color: #D9534F;
+            font-size: 13px;
+            left: 541px;
+            flex-direction: row;
+             }
+         
+        .card-alat-dapur .harga2 p {
+        margin-right: 10px; 
+        }
+      
+        .card-alat-dapur .harga3 {
+            display: flex;
+            position: absolute;
+            top: 1630px;
+            color: #D9534F;
+            font-size: 13px;
+            left: 907px;
+            flex-direction: row;
+        }
+         
+        .card-alat-dapur .harga3 p {
+        margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+        } 
+      
+        .card-alat-dapur .harga-sebelum{
+            text-decoration: line-through;
+        }
+      
+        .card-alat-dapur .harga-sesudah{
+            font-weight: bold;
+        }
+      
+
+
+        .card-hiasan{
+            background-color: #FFFFFF;
+            /* padding: 9px; */
+            height: 616px ;
+            /* width: 1352px; */
+            /* margin-top: 950px; */
+            display: flex;
+            padding: 0 35px;
+            align-items: center;
+            justify-content: center;
+            top: 1234px;
+            border: none;
+           }
+        
+.card-hiasan h1 {
+    font-size: 32px;
+    position: absolute;
+    color: black;
+    top: 1739px;
+   
+   }
+  
+   .card-hiasan .gambar1{
+    position: absolute;
+    left: 172px;
+    top: 1833px;
+    
+   }
+  
+   .card-hiasan .gambar1 img{
+    width: 344px;
+    height: 344px;
+   }
+  
+   .card-hiasan .gambar2{
+    position: absolute;
+    left: 534px;
+    top: 1833px;
+   }
+
+    .card-hiasan .gambar2 img{
+        width: 344px;
+        height: 344px;
+       
+   }
+  
+   .card-hiasan .gambar3{
+    position: absolute;
+    left: 899px;
+    top: 1833px;
+   }
+
+   .card-hiasan .gambar3 img{
+    width: 344px;
+    height: 344px;
+   }
+  
+   .card-hiasan .title-1{
+    position: absolute;
+    top: 2201px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 174px;
+    padding-right: 832px;
+   }
+  
+   .card-hiasan .title-2{
+    position: absolute;
+    top: 2201px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 538px;
+    padding-right: 468px;
+   }
+  
+   .card-hiasan .title-3{
+    position: absolute;
+    top: 2201px;
+    font-size: 16px;
+    color: black;
+    /* line-height: 25; */
+    left: 903px;
+    padding-right: 103px;
+   }
+  
+   .card-hiasan .harga1 {
+   display: flex;
+   position: absolute;
+   top: 2246px;
+   color: #D9534F;
+   font-size: 13px;
+   left: 175px;
+   flex-direction: row;
+    }
+  
+    .card-hiasan .harga1 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    } 
+  
+    .card-hiasan .harga2 {
+        display: flex;
+        position: absolute;
+        top: 2246px;
+        color: #D9534F;
+        font-size: 13px;
+        left: 541px;
+        flex-direction: row;
+         }
+     
+    .card-hiasan .harga2 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    }
+  
+    .card-hiasan .harga3 {
+        display: flex;
+        position: absolute;
+        top: 2246px;
+        color: #D9534F;
+        font-size: 13px;
+        left: 907px;
+        flex-direction: row;
+    }
+     
+    .card-hiasan .harga3 p {
+    margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+    } 
+  
+    .card-hiasan .harga-sebelum{
+        text-decoration: line-through;
+    }
+  
+    .card-hiasan .harga-sesudah{
+        font-weight: bold;
+    }
+
+
+
+
+    .card-lainnya{
+        background-color: #F2F2F2;
+        /* padding: 9px; */
+        height: 616px ;
+        /* width: 1352px; */
+        /* margin-top: 950px; */
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        top: 1851px;
+        border: none;
+       }
+      
+      .card-lainnya h1 {
+      font-size: 32px;
+      position: absolute;
+      color: black;
+      top: 2348px;
+      
+      }
+      
+      .card-lainnya .gambar1{
+      position: absolute;
+      left: 172px;
+      top: 2462px;
+      
+      }
+      
+      .card-lainnya .gambar1 img{
+      width: 344px;
+      height: 344px;
+      }
+      
+      .card-lainnya .gambar2{
+      position: absolute;
+      left: 534px;
+      top: 2462px;
+      }
+      
+      .card-lainnya .gambar2 img{
+      width: 344px;
+      height: 344px;
+      
+      }
+      
+      .card-lainnya .gambar3{
+      position: absolute;
+      left: 899px;
+      top: 2462px;
+      }
+      
+      .card-lainnya .gambar3 img{
+      width: 344px;
+      height: 344px;
+      }
+      
+      .card-lainnya .title-1{
+      position: absolute;
+      top: 2827px;
+      font-size: 16px;
+      color: black;
+      /* line-height: 25; */
+      left: 174px;
+      padding-right: 832px;
+      }
+      
+      .card-lainnya .title-2{
+      position: absolute;
+      top: 2827px;
+      font-size: 16px;
+      color: black;
+      /* line-height: 25; */
+      left: 538px;
+      padding-right: 468px;
+      }
+      
+      .card-lainnya .title-3{
+      position: absolute;
+      top: 2827px;
+      font-size: 16px;
+      color: black;
+      /* line-height: 25; */
+      left: 903px;
+      padding-right: 103px;
+      }
+      
+      .card-lainnya .harga1 {
+      display: flex;
+      position: absolute;
+      top: 2874px;
+      color: #D9534F;
+      font-size: 13px;
+      left: 175px;
+      flex-direction: row;
+      }
+      
+      .card-lainnya .harga1 p {
+      margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+      } 
+      
+      .card-lainnya .harga2 {
+      display: flex;
+      position: absolute;
+      top: 2874px;
+      color: #D9534F;
+      font-size: 13px;
+      left: 541px;
+      flex-direction: row;
+      }
+      
+      .card-lainnya .harga2 p {
+      margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+      }
+      
+      .card-lainnya .harga3 {
+      display: flex;
+      position: absolute;
+      top: 2874px;
+      color: #D9534F;
+      font-size: 13px;
+      left: 907px;
+      flex-direction: row;
+      }
+      
+      .card-lainnya .harga3 p {
+      margin-right: 10px; /* Atur jarak antar elemen jika diinginkan */
+      } 
+      
+      .card-lainnya .harga-sebelum{
+      text-decoration: line-through;
+      }
+      
+      .card-lainnya .harga-sesudah{
+      font-weight: bold;
+      }
+  
+      .card-pesan-custom{
+        background-color: #A6795B;
+        /* padding: 9px; */
+        height: 324px ;
+        /* width: 1352px; */
+        /* margin-top: 950px; */
+        display: flex;
+        padding: 0 35px;
+        align-items: center;
+        justify-content: center;
+        top: 2468px;
+        border: none;
+       }
+    
+    .card-pesan-custom .title{
+       color: white;
+       position: absolute;
+       top: 2989px;
+    }
+    .card-pesan-custom .isi1{
+        color: white;
+        font-size: 16px;
+        line-height: 25px;
+        position: absolute;
+        left: 260px;
+    }
+    .card-pesan-custom .isi2{
+       color: white;
+      font-size: 16px;
+       line-height: 25px;
+        position: absolute;
+        left: 576px;
+        /* padding-right: 194px; */
+        top: 3140px;
+    }
+
+
+    .card-pesan-custom .box {
+        width: 161px;
+        height: auto;
+        float: left;
+        transition: .5s linear;
+        position: relative;
+        display: block;
+        overflow: hidden;
+        padding: 15px;
+        text-align: center;
+        margin: 0 5px;
+        background: white;
+        text-transform: uppercase;
+        font-weight: 900;
+        left: 4px;
+        margin-top: 166px;
+    }
+      
+      .card-pesan-custom .box:before {
+        position: absolute;
+        content: '';
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 100%;
+        border-bottom: 4px solid transparent;
+        border-left: 4px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(100%);
+      }
+      
+      .card-pesan-custom .box:after {
+        position: absolute;
+        content: '';
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        border-top: 4px solid transparent;
+        border-right: 4px solid transparent;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+      }
+      
+      .card-pesan-custom .box:hover {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      }
+      
+      .card-pesan-custom .box:hover:before {
+        border-color: #262626;
+        height: 100%;
+        transform: translateX(0);
+        transition: .3s transform linear, .3s height linear .3s;
+      }
+      
+      .card-pesan-custom .box:hover:after {
+        border-color: #262626;
+        height: 100%;
+        transform: translateX(0);
+        transition: .3s transform linear, .3s height linear .5s;
+      }
+      
+      .card-pesan-custom button {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background: transparent;
+      }    
+
+
+   .card-promo-spesial .Btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 164px;
+    top: 1050px;
+  }
+
+  .card-promo-spesial .Btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 543px;
+    top: 1050px;
+  }
+  .card-promo-spesial .Btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 911px;
+    top: 1050px;
+  }
+
+  .card-alat-dapur .Btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 164px;
+    top: 1670px;
+  }
+
+  .card-alat-dapur .Btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 543px;
+    top: 1670px;
+  }
+  .card-alat-dapur .Btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 911px;
+    top: 1670px;
+  }
+  .card-hiasan .Btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 164px;
+    top: 2280px;
+  }
+
+  .card-hiasan .Btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 543px;
+    top: 2280px;
+  }
+  .card-hiasan .Btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 911px;
+    top: 2280px;
+  }
+  .card-lainnya .Btn1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 164px;
+    top: 2904px;
+  }
+
+  .card-lainnya .Btn2 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 543px;
+    top: 2904px;
+  }
+  .card-lainnya .Btn3 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: #A6795B;
+    position: absolute;
+    left: 911px;
+    top: 2904px;
+  }
+  
+  /* plus sign */
+ .sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ .sign svg {
+    width: 30px;
+  }
+  
+ .sign svg path {
+    fill: white;
+  }
+  /* text */
+ .text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+  }
+  /* hover effect on button width */
+  .Btn1:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn1:hover .sign {
+    width: 50px;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn1:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn1:active {
+    transform: translate(2px ,2px);
+  }
+  .Btn2:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn2:hover .sign {
+    width: 50px;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn2:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn2:active {
+    transform: translate(2px ,2px);
+  }
+  .Btn3:hover {
+    width: 125px;
+    border-radius: 40px;
+    transition-duration: .3s;
+  }
+  
+  .Btn3:hover .sign {
+    width: 50px;
+    transition-duration: .3s;
+    padding-left: 20px;
+  }
+  /* hover effect button's text */
+  .Btn3:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+  }
+  /* button click effect*/
+  .Btn3:active {
+    transform: translate(2px ,2px);
+  }
+
+
+  .overlay1 {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang dengan efek blur */
+    z-index: 9999;
+    overflow: hidden;
+}
+
+.card1 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5); /* Awalnya card diperkecil */
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out; /* Animasi perubahan skala */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+
+.popup img{
+  width: 260px;
+  height: 260px;
+  position: absolute;
+  border: 3px solid #3B1A00;
+  border-radius: 10px;
+}
+.popup .namaproduk{
+  position: absolute;
+    top: 30px;
+    font-size: 25px;
+    color: black;
+
+    left: 300px;
+}
+
+.popup .harga{
+  display: flex;
+  position: absolute;
+  /* top: 1630px; */
+  color: #D9534F;
+  font-size: 15px;
+  left: 300px;
+  flex-direction: row;
+  top: 80px;
+}
+
+.popup .img{
+  border: 2px solid black;
+}
+
+.popup .deskripsi{
+  position: absolute;
+  top: 300px;
+  font-size: 25px;
+  color: black;
+  left: 30px;
+  color: black;
+  font-size: 20px;
+}
+
+.popup .isideskripsi{
+  position: absolute;
+  top: 340px;
+  font-size: 15px;
+  /* color: black; */
+  left: 30px;
+  color: gray;
+  font-size: 17px;
+
+}
+
+
+.popup .box {
+  width: 161px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 900;
+  left: 276px;
+  /* margin-top: 166px; */
+  top: 110px;
+  border: 3px solid #262626;
+}
+.popup button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}    

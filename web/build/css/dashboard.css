@@ -191,7 +191,7 @@ header.scrolled nav a:hover::before {
   font-size: 16px;
   color: #1C1E21;
   opacity: 72%;
-  line-height: 24px;
+  line-height: 30px;
 }
 
 .card img {

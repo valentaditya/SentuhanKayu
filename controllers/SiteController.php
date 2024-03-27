@@ -10,6 +10,11 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\main_dashboard;
+use app\models\Promo;
+use app\models\Alatdapur;
+use app\models\Hiasan;
+use app\models\Lainnya;
+use app\models\Datapromo;
 
 class SiteController extends Controller
 {
@@ -20,11 +25,11 @@ class SiteController extends Controller
     {
         return [
             'access' => [
-                'class' => AccessControl::class,
-                'only' => ['logout'],
+                'class' => \yii\filters\AccessControl::class,
+                'only' => ['index'],
                 'rules' => [
                     [
-                        'actions' => ['logout'],
+                        // 'actions' => ['index'],
                         'allow' => true,
                         'roles' => ['@'],
                     ],
@@ -72,6 +77,7 @@ class SiteController extends Controller
      */
     public function actionLogin()
     {
+        $this->layout = 'main_login';
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
@@ -85,6 +91,32 @@ class SiteController extends Controller
         return $this->render('login', [
             'model' => $model,
         ]);
+        return $this->render('login');
+    }
+
+    public function actionPassword()
+    {
+        $this->layout = false;
+        $model = new ForgotPasswordForm();
+
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            $user = User::findOne(['username' => $model->username]);
+    
+            if ($user) {
+                $user->password = $model->password; // Gunakan atribut password
+                
+                if ($user->save()) {
+                    Yii::$app->session->setFlash('success', 'Password berhasil diubah.');
+                } else {
+                    Yii::$app->session->setFlash('error', 'Terjadi kesalahan saat mengubah password.');
+                }
+            } else {
+                Yii::$app->session->setFlash('error', 'Username tidak ditemukan.');
+            }
+    
+            return $this->redirect(['site/index']); // Ganti dengan halaman tujuan setelah berhasil mengubah password.
+        }
+        return $this->render('Password',['model' =>$model]);
     }
 
     /**
@@ -103,6 +135,20 @@ class SiteController extends Controller
     {
         $this->layout = 'main_dashboard';
         return $this->render('dashboard');
+        
+    }
+
+    public function actionKatalog()
+    {
+        $this->layout = 'main_dashboard';
+        $promo = Promo::find()->all();
+        $alatdapur = Alatdapur::find()->all();
+        $hiasan = Hiasan::find()->all();
+        $lainnya = Lainnya::find()->all();
+        $datapromo = Datapromo::find()->all();
+        // return $this->render('katalog');
+
+        return $this->render('katalog', ['promo' => $promo , 'hiasan' => $hiasan , 'alatdapur' => $alatdapur, 'lainnya' => $lainnya, 'datapromo' => $datapromo]);
         
     }
 
@@ -140,5 +186,4 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
-    
 }

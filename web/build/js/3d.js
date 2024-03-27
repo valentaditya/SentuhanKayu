@@ -1,69 +1,88 @@
-// Import Three.js dan library lainnya
+//Import the THREE.js library
 import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+// To allow for the camera to move around the scene
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
+// To allow for importing the .gltf file
 import { GLTFLoader } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/loaders/GLTFLoader.js";
 
-// Buat Scene dan Kamera
+//Create a Three.JS Scene
 const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+//create a new camera with positions and angles
+const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
-// Posisi Kamera
-camera.position.z = 25;
+//Keep track of the mouse position, so we can make the eye move
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
 
-// Batasi frame
-const frameWidth = 3000;
-const frameHeight = frameWidth / (window.innerWidth / window.innerHeight);
-renderer.setSize(frameWidth, frameHeight);
+//Keep the 3D object on a global variable so we can access it later
+let dinoObject;
 
-// Lampu
-const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-scene.add(ambientLight);
+//OrbitControls allow the camera to move around the scene
+let controls;
 
-const pointLight = new THREE.PointLight(0xffffff, 1);
-pointLight.position.set(0, 100, 200);
-scene.add(pointLight);
-
-const topLight = new THREE.DirectionalLight(0xffffff, 1);
-topLight.position.set(500, 500, 500);
-topLight.castShadow = true;
-scene.add(topLight);
-
-// Orbit Controls
-const controls = new OrbitControls(camera, renderer.domElement);
-
-// Loader dan Model
+//Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
+
+//Load the dino model file
 loader.load(
-  "build/models/dino/scene.gltf",
-  (gltf) => {
+  'build/models/dino/scene.gltf',
+  function (gltf) {
+    //If the file is loaded, add it to the scene
     dinoObject = gltf.scene;
     scene.add(dinoObject);
   },
-  (xhr) => {
-    console.log((xhr.loaded / xhr.total * 100) + "% loaded");
+  function (xhr) {
+    //While it is loading, log the progress
+    console.log((xhr.loaded / xhr.total * 10) + '% loaded');
   },
-  (error) => {
+  function (error) {
+    //If there is an error, log it
     console.error(error);
   }
 );
 
-// Render dan Animasi
-const renderer = new THREE.WebGLRenderer({ alpha: true });
+// Tambahkan lampu ambient
+const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // (color, intensity)
+scene.add(ambientLight);
+
+// Tambahkan lampu titik tambahan
+const pointLight = new THREE.PointLight(0xffffff, 1); // (color, intensity)
+pointLight.position.set(0, 100, 200); // Atur posisi lampu
+scene.add(pointLight);
+
+//Instantiate a new renderer and set its size
+const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+//Add the renderer to the DOM
 document.getElementById("container3D").appendChild(renderer.domElement);
 
+//Set how far the camera will be from the dino model
+camera.position.z = 25;
+
+//Add lights to the scene, so we can actually see the dino model
+const topLight = new THREE.DirectionalLight(0xffffff, 1); // (color, intensity)
+topLight.position.set(500, 500, 500) //top-left-ish
+topLight.castShadow = true;
+scene.add(topLight);
+
+//This adds controls to the camera, so we can rotate / zoom it with the mouse
+controls = new OrbitControls(camera, renderer.domElement);
+
+//Render the scene
 function animate() {
   requestAnimationFrame(animate);
+  //Here we could add some code to update the scene, adding some automatic movement
 
   renderer.render(scene, camera);
 }
 
-animate();
-
-// Menangani perubahan ukuran jendela
+//Add a listener to the window, so we can resize the window and the camera
 window.addEventListener("resize", function () {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
-
-  const newFrameHeight = frameWidth / (window.innerWidth / window.innerHeight);
-  renderer.setSize(frameWidth, newFrameHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
 });
+
+//Start the 3D rendering
+animate();

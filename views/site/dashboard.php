@@ -41,7 +41,7 @@
                     <p class="title">Pengrajin Kayu Custom <br>Profesional.</p>
                 </strong>
                 <p class="isi">Melayani pesanan mangkok kayu, talenan kayu, nampan kayu, <br> piring kayu, merchandise kayu, dan kerajinan kayu lainnya dan <br> dapat di custom sesuai keinginan anda <br></p>
-                <a href="https://wa.me/6287836118750?text=Min Saya Ingin Pesan Barang Dari SentuhanKayu"><button class="Button-Pesan-Custum">Pesan Custum</button></a>
+                <a href="https://wa.me/6287836118750?text=*hallo min saya ingin bertanya/memesan di SentuhanKayu*%20%0ANama%20%3A%0AAlamat%20%3A%0ANama Barang%20%3A%0AJumlah Pesanan%20%3A%0ANote%20%3A%0ATerimakasih Min%20%0A "><button class="Button-Pesan-Custum">Pesan Custum</button></a>
             </div>
 
             <div class="card" id="Tentang-Kami">
@@ -90,7 +90,7 @@
              <div class="card-pesan-sekarang" data-aos="fade-up">
                 <h1>Pesan Sekarang</h1>
                 <p>Hubungi kami sekarang untuk mendapatkan berbagai benefit dan kemudahan ini. Klik tombol di bawah ini.</p>
-                <a href="https://wa.me/6287836118750?text=Min Saya Ingin Pesan Barang Dari SentuhanKayu"><button class="button2">Pesan Sekarang</button></a>
+                <a href="https://wa.me/6287836118750?text=*hallo min saya ingin bertanya/memesan di SentuhanKayu*%20%0ANama%20%3A%0AAlamat%20%3A%0ANama Barang%20%3A%0AJumlah Pesanan%20%3A%0ANote%20%3A%0ATerimakasih Min%20%0A"><button class="button2">Pesan Sekarang</button></a>
              </div>
             </div>
 
@@ -191,7 +191,7 @@
                 <div class="kotakputih"></div>
                 <p style ="font-size: 16px; position: absolute; left: 217px; top: 6097px;"> Selain Produk Custom Kami Juga Ada Produk Ready.</p>
                 <p style ="font-size: 16px; position: absolute; left: 219px; top: 6151px; padding-right: 722px;">Mau Lihat Katalog Untuk Produk Yang Ready? Silahkan Klik Tombol Di Bawah Ini.</p>
-                <a href="">
+                <a href='/index.php?r=site%2Fkatalog'>
                 <button>
                     <span class="box">
                         Lihat Produk Ready
@@ -263,18 +263,21 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.270804473986!2d109.24651767442764!3d-7.435257773252897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e655ea49d9f9885%3A0x62be0b6159700ec9!2sTelkom%20Institute%20of%20Technology%20Purwokerto!5e0!3m2!1sen!2sid!4v1708877646918!5m2!1sen!2sid" width="600" height="450" style="border: 0; position: absolute; left: 746px; width: 398px; height: 284px; top: 8629px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
                <img src="build/assets/icon/maps.png" alt="" style="width: 36px; height: 45px; position: absolute; top: 8643px; left: 289px;">
-               <img src="build/assets/icon/phone.png" alt="" style="width: 47px; height: 53px; position: absolute; top: 8716px; left: 282px;">
+               <img src="build/assets/icon/phone.png" alt="" style="width: 47px; height: 53px; position: absolute; top: 8727px; left: 282px;">
                <img src="build/assets/icon/email.png" alt="" style="width: 53px; height: 50px; position: absolute; top: 8794px; left: 278px;">
 
                 <strong><p class="judul-icon">Lokasi</p></strong>
-                <p class="title-icon">Jl. Jend. Sudirman 427, Brubahan, Purwanegara, Kec. Purwokerto Utara</p>
+                <p class="title-icon">Jl. DI Panjaitan No.128, Karangreja, Purwokerto Kidul, Kec. Purwokerto Sel., Kabupaten Banyumas, Jawa Tengah</p>
 
-                <strong><p class="judul-icon" style="top:8718px;">WhatsApp</p></strong>
-                <p class="title-icon" style="top:8744px">0878 3611 8750</p>
+                <strong><p class="judul-icon" style="top: 8730px;">WhatsApp</p></strong>
+                <a href="https://wa.me/6287836118750?text=*hallo min saya ingin bertanya/memesan di SentuhanKayu*%20%0ANama%20%3A%0AAlamat%20%3A%0ANama Barang%20%3A%0AJumlah Pesanan%20%3A%0ANote%20%3A%0ATerimakasih Min%20%0A ">
+                    <p class="title-icon" style="top:8751px ;color:white" >0878 3611 8750</p>
+                </a>
 
                 <strong><p class="judul-icon" style="top:8796px;">Email</p></strong>
-                <p class="title-icon" style="top:8816px">SentuhanKayu@gmail.com</p>
-
+                <a href="mailto:valent.aditya1210@gmail.com?subject=Tanya%20Produk&body=Saya%20Tertarik%20dengan%20Produk%20Anda%20di%20SentuhanKayu">
+                    <p class="title-icon" style="top:8816px ; color: white ;    padding-right: 130px;">SentuhanKayu@gmail.com</p>
+                </a>
                 <div class="garisputihbawah"></div>
 
 
